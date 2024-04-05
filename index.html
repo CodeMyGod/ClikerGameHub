@@ -24,6 +24,7 @@
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker.register("ServiceWorker.js");
         }
+                Telegram.WebApp.expand(); // Розширити гру на весь екран після завантаження сторінки
       });
 
       var container = document.querySelector("#unity-container");
