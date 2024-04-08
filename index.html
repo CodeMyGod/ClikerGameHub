@@ -20,12 +20,13 @@
       <div id="unity-warning"> </div>
     </div>
     <script>
-      window.addEventListener("load", function () {
+    window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("ServiceWorker.js");
+            navigator.serviceWorker.register("ServiceWorker.js");
         }
-                Telegram.WebApp.expand(); // Розширити гру на весь екран після завантаження сторінки
+         // Розширити гру на весь екран після завантаження сторінки
       });
+      Telegram.WebApp.expand();
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
